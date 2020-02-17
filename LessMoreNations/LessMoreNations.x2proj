@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>f27f4280-7711-4028-ab92-6b40b28333e5</Guid>
+    <Name>LessMoreNations</Name>
+    <Description>Less more nations</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>LessMoreNations</AssemblyName>
+    <RootNamespace>LessMoreNations</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\LessMoreNations\" />
+    <Folder Include="Src\LessMoreNations\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComGameBoard.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\LessMoreNations\Classes\X2DownloadableContentInfo_LessMoreNations.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
